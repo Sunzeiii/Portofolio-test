@@ -1,13 +1,14 @@
 // --- Supabase Integration ---
 // TUAN ARYA: Silakan masukkan URL dan ANON KEY Supabase Anda di sini
-const SUPABASE_URL = ''; // e.g., 'https://xyz.supabase.co'
-const SUPABASE_ANON_KEY = ''; // e.g., 'eyJhbGciOiJIUzI1NiIsInR5c...'
+const SUPABASE_URL = 'https://trokqkycaowhdsfbavmt.supabase.co'; // HANYA Base URL-nya saja
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRyb2txa3ljYW93aGRzZmJhdm10Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAyNDk4ODMsImV4cCI6MjEwNTgyNTg4M30.TNFaZHpes5rbpMJe7IjR04itX_EXgRsE8sfjEZLnz1Y';
 
 const projectsContainer = document.getElementById('projects-container');
 const supabaseAlert = document.getElementById('supabase-alert');
 
 async function fetchProjects() {
-    if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+    // Kita cek kalau anon key-nya belum valid (masih pendek)
+    if (!SUPABASE_URL || !SUPABASE_ANON_KEY || SUPABASE_ANON_KEY.length < 50) {
         // Show alert if no credentials
         projectsContainer.innerHTML = '';
         supabaseAlert.style.display = 'block';
@@ -17,9 +18,9 @@ async function fetchProjects() {
     try {
         const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
         
-        // Ganti 'projects' dengan nama tabel yang sesuai di Supabase Anda
+        // Asumsi dari URL yang Tuan Arya masukkan, nama tabelnya adalah 'Data' (sebelumnya 'projects')
         const { data, error } = await supabase
-            .from('projects')
+            .from('Data')
             .select('*')
             .order('created_at', { ascending: false });
 
