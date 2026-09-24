@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunzeiii | Nararya Putra</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Typed.js for typing animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Animated Background -->
+    <div class="bg-animated">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Bento Grid Section -->
+        <section class="bento-grid">
+            
+            <!-- Intro Card -->
+            <div class="bento-card intro-card">
+                <p class="mono-text"><i class="fas fa-terminal"></i> hello_world.js</p>
+                <h1><span id="typed-name"></span></h1>
+                <h2>a.k.a <span>Sunzeiii</span></h2>
+                <p class="desc">
+                    Seorang antusias teknologi yang sedang mengejar mimpi menjadi Software Engineer kelas dunia. Saya suka memecahkan masalah kompleks menjadi baris kode yang elegan.
+                </p>
+            </div>
+
+            <!-- Profile Photo Card -->
+            <div class="bento-card photo-card">
+                <!-- Tuan Arya: Pastikan foto yang tadi dikirim sudah di-save di folder testing_supabase dengan nama foto-arya.jpg -->
+                <img src="foto-arya.jpg" alt="Nararya Putra">
+                <div class="photo-overlay">
+                    <div class="status-dot"></div>
+                    <span>Available for Code</span>
+                </div>
+            </div>
+
+            <!-- University Goals Card -->
+            <div class="bento-card goals-card">
+                <h3 class="card-title">Next Destination 🚀</h3>
+                <div class="uni-list">
+                    <div class="uni-item">
+                        <div class="uni-icon"><i class="fas fa-code"></i></div>
+                        <div>
+                            <h4>ITS</h4>
+                            <p>Teknik Informatika</p>
+                        </div>
+                    </div>
+                    <div class="uni-item">
+                        <div class="uni-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div>
+                            <h4>Telkom University</h4>
+                            <p>Rekayasa Perangkat Lunak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Timeline Card -->
+            <div class="bento-card edu-card">
+                <h3 class="card-title">My Journey 🎒</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="dot"></div>
+                        <div class="content">
+                            <h4>Sekolah Menengah Kejuruan (SMK)</h4>
+                            <p>Fokus mendalami dunia IT & Programming.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="dot"></div>
+                        <div class="content">
+                            <h4>Sekolah Menengah Pertama (SMP)</h4>
+                            <p>Mulai tertarik dengan teknologi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="dot"></div>
+                        <div class="content">
+                            <h4>Sekolah Dasar (SD)</h4>
+                            <p>Langkah pertama.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links Card -->
+            <div class="bento-card social-card">
+                <a href="#" class="social-btn github"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+        </section>
+
+        <!-- Projects Section (Supabase) -->
+        <section class="projects-section">
+            <div class="section-header">
+                <h2>Project <span>Showcase</span></h2>
+                <p>Data diambil langsung dari Supabase Database milik saya.</p>
+            </div>
+            
+            <div class="projects-grid" id="projects-container">
+                <!-- Skeleton Loading State -->
+                <div class="project-card skeleton">
+                    <div class="skeleton-img"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                </div>
+                <div class="project-card skeleton">
+                    <div class="skeleton-img"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text short"></div>
+                </div>
+            </div>
+            
+            <div id="supabase-alert" class="alert-box" style="display: none;">
+                <i class="fas fa-database"></i>
+                <p>Silakan isi <code>SUPABASE_URL</code> dan <code>SUPABASE_ANON_KEY</code> di <code>script.js</code>.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Crafted with ❤️ by Sunzeiii</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
