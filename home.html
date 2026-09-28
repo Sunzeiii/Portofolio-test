@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicons for Tech Stack -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
     <!-- Supabase CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <!-- Typed.js for typing animation -->
@@ -101,10 +103,77 @@
 
             <!-- Social Links Card -->
             <div class="bento-card social-card">
-                <a href="#" class="social-btn github"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <h3 class="card-title">My Social Media</h3>
+                <div style="width: 100%;" class="social-btn">
+                    <a href="#" class="social-btn github"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Tech Stack Card -->
+            <div class="bento-card techstack-card" id="techstack-card">
+                <div class="techstack-header">
+                    <h3 class="card-title">Tech Stack <span class="techstack-emoji">⚡</span></h3>
+                    <p class="techstack-subtitle">Tools & technologies I work with</p>
+                </div>
+                <div class="techstack-categories">
+                    <!-- Frontend -->
+                    <div class="techstack-category">
+                        <span class="category-label"><i class="fas fa-palette"></i> Frontend</span>
+                        <div class="techstack-icons">
+                            <div class="tech-icon-wrapper" data-tooltip="HTML5">
+                                <i class="devicon-html5-plain colored"></i>
+                            </div>
+                            <div class="tech-icon-wrapper" data-tooltip="CSS3">
+                                <i class="devicon-css3-plain colored"></i>
+                            </div>
+                            <div class="tech-icon-wrapper" data-tooltip="JavaScript">
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                            <div class="tech-icon-wrapper" data-tooltip="React">
+                                <i class="devicon-react-original colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="techstack-category">
+                        <span class="category-label"><i class="fas fa-server"></i> Backend</span>
+                        <div class="techstack-icons">
+                            <div class="tech-icon-wrapper" data-tooltip="Node.js">
+                                <i class="devicon-nodejs-plain colored"></i>
+                            </div>
+                            <div class="tech-icon-wrapper" data-tooltip="Python">
+                                <i class="devicon-python-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Database -->
+                    <div class="techstack-category">
+                        <span class="category-label"><i class="fas fa-database"></i> Database</span>
+                        <div class="techstack-icons">
+                            <div class="tech-icon-wrapper" data-tooltip="Supabase">
+                                <i class="devicon-supabase-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="techstack-category">
+                        <span class="category-label"><i class="fas fa-wrench"></i> Tools</span>
+                        <div class="techstack-icons">
+                            <div class="tech-icon-wrapper" data-tooltip="Git">
+                                <i class="devicon-git-plain colored"></i>
+                            </div>
+                            <div class="tech-icon-wrapper" data-tooltip="VS Code">
+                                <i class="devicon-vscode-plain colored"></i>
+                            </div>
+                            <div class="tech-icon-wrapper" data-tooltip="Figma">
+                                <i class="devicon-figma-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -139,7 +208,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Crafted with ❤️ by Sunzeiii</p>
+        <p>&copy; BOOM </p>
     </footer>
 
     <script src="script.js"></script>
